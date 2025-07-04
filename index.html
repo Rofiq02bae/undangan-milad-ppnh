@@ -1,156 +1,152 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Undangan Ulang milad ppnh</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #e0ffe0; /* Warna hijau muda untuk background */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-        .container {
-            background-color: #ffffff;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            max-width: 600px;
-            padding: 30px;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-        .header {
-            color: #006400; /* Hijau tua */
-            margin-bottom: 20px;
-        }
-        .header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        .header p {
-            font-size: 1.2em;
-            font-weight: bold;
-        }
-        .mosque-dome {
-            width: 100%;
-            height: 80px;
-            background-color: #008000; /* Hijau sedang */
-            border-radius: 50% 50% 0 0;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 0;
-            opacity: 0.8;
-        }
-        .mosque-dome::before {
-            content: '';
-            position: absolute;
-            width: 60%;
-            height: 40px;
-            background-color: #004d00; /* Hijau lebih gelap */
-            border-radius: 50% 50% 0 0;
-            top: 10px;
-            left: 20%;
-            z-index: 1;
-        }
-        .mosque-dome::after {
-            content: '';
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            background-color: #ffd700; /* Emas */
-            border-radius: 50%;
-            top: -5px;
-            left: calc(50% - 10px);
-            z-index: 2;
-            box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
-        }
-        .content {
-            position: relative;
-            z-index: 1;
-            padding-top: 50px; /* Memberi ruang untuk kubah */
-        }
-        .invitation-text {
-            font-size: 1.1em;
-            line-height: 1.6;
-            color: #333;
-            margin-bottom: 25px;
-        }
-        .details p {
-            margin: 8px 0;
-            font-size: 1em;
-            color: #555;
-        }
-        .footer {
-            margin-top: 30px;
-            font-size: 0.9em;
-            color: #777;
-        }
-        .highlight {
-            color: #008000;
-            font-weight: bold;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Undangan Milad PP Nurul Hidayah</title>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(to bottom right, #e8f5e9, #c8e6c9);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+      max-width: 700px;
+      width: 100%;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .header {
+      background: url('https://i.ibb.co/xzVnGRG/mosque-silhouette.png') center no-repeat;
+      background-size: cover;
+      padding: 80px 30px 40px;
+      color: white;
+      text-shadow: 1px 1px 4px #000;
+      text-align: center;
+      position: relative;
+    }
+
+    .header::before {
+      content: "";
+      background: rgba(0, 100, 0, 0.6);
+      position: absolute;
+      inset: 0;
+    }
+
+    .header h1 {
+      position: relative;
+      font-family: 'Marcellus', serif;
+      font-size: 2.5em;
+      z-index: 1;
+    }
+
+    .header p {
+      position: relative;
+      font-size: 1.1em;
+      z-index: 1;
+      margin-top: 10px;
+    }
+
+    .content {
+      padding: 30px;
+      color: #333;
+    }
+
+    .content p {
+      margin-bottom: 16px;
+      line-height: 1.6;
+      font-size: 1.05em;
+    }
+
+    .highlight {
+      color: #2e7d32;
+      font-weight: bold;
+    }
+
+    .details {
+      background-color: #f1f8e9;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+
+    .details p {
+      margin: 8px 0;
+      font-size: 1em;
+      color: #444;
+    }
+
+    iframe {
+      margin-top: 20px;
+      width: 100%;
+      border-radius: 12px;
+      border: 0;
+      height: 300px;
+    }
+
+    .footer {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 0.95em;
+      color: #666;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      .header h1 {
+        font-size: 2em;
+      }
+      .content {
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="mosque-dome"></div>
-        <div class="content">
-            <div class="header">
-                <h1>Ulang Tahun Organisasi Islam</h1>
-                <p>Mengundang kepada Yth. Bapak/Ibu/Sdr/i:</p>
-            </div>
-
-            <div class="invitation-text">
-                <p>Dengan hormat, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dalam acara peringatan <span class="highlight">MILAD PP NURUL HIDAYAH</span> yang ke-7.</p>
-                <p>Acara ini merupakan wujud syukur kami atas karunia dan rahmat Allah SWT serta dedikasi seluruh masyarakat dalam membangun dan mengembangkan syiar Islam.</p>
-            </div>
-
-            <div class="details">
-                <p><strong>Hari/Tanggal:</strong> Sabtu malam minggu, 05 Juli 2025</p>
-                <p><strong>Waktu:</strong> pukul 19.00 (bada isya)</p>
-                <p><strong>Tempat:</strong> PP Nurul Hidayah </p>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d494.15458383762245!2d110.4121457037956!3d-7.764707503536613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a59be6d1c9c23%3A0xc3f640a56359df7!2sPondok%20Pesantren%20Nurul%20Hidayah!5e0!3m2!1sen!2sid!4v1751632730023!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        
-            </div>
-
-            <div class="footer">
-                <p>Kehadiran Bapak/Ibu/Saudara/i merupakan suatu kehormatan dan kebahagiaan bagi kami.</p>
-                <p>Hormat kami,</p>
-                <p>Panitia Milad PP Nurul Hidayah Ke-7</p>
-            </div>
-        </div>
+  <div class="card">
+    <div class="header">
+      <h1>Milad Ke-7 PP Nurul Hidayah</h1>
+      <p>Undangan Resmi</p>
     </div>
+    <div class="content">
+      <p>Assalamu’alaikum Warahmatullahi Wabarakatuh,</p>
+      <p>Dengan penuh syukur ke hadirat Allah SWT, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dalam acara <span class="highlight">MILAD Ke-7 Pondok Pesantren Nurul Hidayah</span>.</p>
+      <p>Acara ini adalah momentum penting dalam mempererat ukhuwah Islamiyah serta meneguhkan kembali semangat dakwah dan pendidikan Islam.</p>
 
-    <script>
-        // JavaScript dasar (saat ini tidak ada fungsionalitas interaktif yang kompleks diminta)
-        // Anda bisa menambahkan fungsionalitas di sini jika diperlukan,
-        // contoh: hitung mundur waktu acara, validasi form RSVP, dll.
+      <div class="details">
+        <p><strong>Hari/Tanggal:</strong> Sabtu malam Minggu, 05 Juli 2025</p>
+        <p><strong>Waktu:</strong> Pukul 19.00 WIB (Ba’da Isya)</p>
+        <p><strong>Tempat:</strong> PP Nurul Hidayah</p>
+      </div>
 
-        document.addEventListener('DOMContentLoaded', function() {
-            console.log('Undangan telah dimuat!');
-            // Contoh kecil: Anda bisa menambahkan efek atau animasi di sini
-            // Misalnya, fade-in untuk elemen tertentu setelah dimuat
-            const container = document.querySelector('.container');
-            container.style.opacity = 0;
-            let opacity = 0;
-            const fadeInInterval = setInterval(function() {
-                if (opacity < 1) {
-                    opacity += 0.05;
-                    container.style.opacity = opacity;
-                } else {
-                    clearInterval(fadeInInterval);
-                }
-            }, 50);
-        });
-    </script>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d494.15458383762245!2d110.4121457037956!3d-7.764707503536613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a59be6d1c9c23%3A0xc3f640a56359df7!2sPondok%20Pesantren%20Nurul%20Hidayah!5e0!3m2!1sen!2sid!4v1751632730023!5m2!1sen!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      <div class="footer">
+        <p>Kehadiran Bapak/Ibu/Saudara/i sangat kami harapkan sebagai bentuk doa dan dukungan.</p>
+        <p>Wassalamu’alaikum Warahmatullahi Wabarakatuh</p>
+        <p>Hormat kami, <br><strong>Panitia Milad Ke-7</strong></p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
