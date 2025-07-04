@@ -4,138 +4,147 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Undangan Milad PP Nurul Hidayah</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --green: #00c781;
-      --dark-bg: #0f1f1c;
-      --card-bg: rgba(18, 32, 28, 0.9);
-      --text-light: #e0ffe0;
-      --accent: #00ffc3;
-    }
-
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
 
-    html, body {
-      height: 100%;
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(145deg, #071512, #0f1f1c);
-      color: var(--text-light);
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(to bottom right, #e8f5e9, #c8e6c9);
       display: flex;
       justify-content: center;
       align-items: center;
+      min-height: 100vh;
       padding: 20px;
     }
 
     .card {
-      background: var(--card-bg);
+      background-color: #fff;
       border-radius: 20px;
-      box-shadow: 0 0 30px rgba(0, 255, 204, 0.15);
-      padding: 40px 30px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
       max-width: 700px;
       width: 100%;
-      backdrop-filter: blur(15px);
-      animation: fadeIn 1.2s ease-in-out;
+      animation: fadeIn 1s ease-in-out;
     }
 
-    .card h1 {
-      font-family: 'Playfair Display', serif;
+    .header {
+      background: url('https://i.ibb.co/xzVnGRG/mosque-silhouette.png') center no-repeat;
+      background-size: cover;
+      padding: 80px 30px 40px;
+      color: white;
+      text-shadow: 1px 1px 4px #000;
+      text-align: center;
+      position: relative;
+    }
+
+    .header::before {
+      content: "";
+      background: rgba(0, 100, 0, 0.6);
+      position: absolute;
+      inset: 0;
+    }
+
+    .header h1 {
+      position: relative;
+      font-family: 'Marcellus', serif;
       font-size: 2.5em;
-      color: var(--green);
-      text-align: center;
-      margin-bottom: 10px;
+      z-index: 1;
     }
 
-    .card p.subtitle {
-      text-align: center;
-      font-weight: 600;
-      margin-bottom: 30px;
+    .header p {
+      position: relative;
       font-size: 1.1em;
+      z-index: 1;
+      margin-top: 10px;
+    }
+
+    .content {
+      padding: 30px;
+      color: #333;
     }
 
     .content p {
-      margin-bottom: 15px;
-      line-height: 1.7;
+      margin-bottom: 16px;
+      line-height: 1.6;
       font-size: 1.05em;
-      color: #d8fcd8;
     }
 
     .highlight {
-      color: var(--accent);
+      color: #2e7d32;
       font-weight: bold;
     }
 
     .details {
-      background: rgba(255, 255, 255, 0.1);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      border-radius: 15px;
+      background-color: #f1f8e9;
       padding: 20px;
+      border-radius: 12px;
       margin-top: 20px;
     }
 
     .details p {
       margin: 8px 0;
-      font-size: 0.98em;
+      font-size: 1em;
+      color: #444;
     }
 
     iframe {
       margin-top: 20px;
       width: 100%;
       border-radius: 12px;
-      border: none;
+      border: 0;
       height: 300px;
-      box-shadow: 0 0 15px rgba(0, 255, 204, 0.2);
     }
 
     .footer {
       margin-top: 30px;
-      font-size: 0.95em;
       text-align: center;
-      color: #cccccc;
+      font-size: 0.95em;
+      color: #666;
     }
 
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(30px); }
+      from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
 
     @media (max-width: 600px) {
-      .card {
-        padding: 30px 20px;
-      }
-
-      .card h1 {
+      .header h1 {
         font-size: 2em;
+      }
+      .content {
+        padding: 20px;
       }
     }
   </style>
 </head>
 <body>
   <div class="card">
-    <h1>Milad Ke-7</h1>
-    <p class="subtitle">PP Nurul Hidayah</p>
-
+    <div class="header">
+      <h1>Milad Ke-7 PP Nurul Hidayah</h1>
+      <p>Undangan Resmi</p>
+    </div>
     <div class="content">
       <p>Assalamu’alaikum Warahmatullahi Wabarakatuh,</p>
-      <p>Dengan penuh rasa syukur ke hadirat Allah SWT, kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri <span class="highlight">Milad Ke-7 Pondok Pesantren Nurul Hidayah</span>.</p>
-      <p>Semoga acara ini menjadi berkah serta momentum untuk memperkuat ukhuwah dan keberkahan dakwah.</p>
+      <p>Dengan penuh syukur ke hadirat Allah SWT, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dalam acara <span class="highlight">MILAD Ke-7 Pondok Pesantren Nurul Hidayah</span>.</p>
+      <p>Acara ini adalah momentum penting dalam mempererat ukhuwah Islamiyah serta meneguhkan kembali semangat dakwah dan pendidikan Islam.</p>
 
       <div class="details">
-        <p><strong>📅 Hari/Tanggal:</strong> Sabtu malam Minggu, 05 Juli 2025</p>
-        <p><strong>⏰ Waktu:</strong> Pukul 19.00 WIB (Ba’da Isya)</p>
-        <p><strong>📍 Tempat:</strong> PP Nurul Hidayah</p>
+        <p><strong>Hari/Tanggal:</strong> Sabtu malam Minggu, 05 Juli 2025</p>
+        <p><strong>Waktu:</strong> Pukul 19.00 WIB (Ba’da Isya)</p>
+        <p><strong>Tempat:</strong> PP Nurul Hidayah</p>
       </div>
 
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d494.15458383762245!2d110.4121457037956!3d-7.764707503536613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a59be6d1c9c23%3A0xc3f640a56359df7!2sPondok%20Pesantren%20Nurul%20Hidayah!5e0!3m2!1sen!2sid!4v1751632730023!5m2!1sen!2sid" allowfullscreen="" loading="lazy"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d494.15458383762245!2d110.4121457037956!3d-7.764707503536613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a59be6d1c9c23%3A0xc3f640a56359df7!2sPondok%20Pesantren%20Nurul%20Hidayah!5e0!3m2!1sen!2sid!4v1751632730023!5m2!1sen!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
       <div class="footer">
-        <p>Kehadiran Anda adalah kehormatan bagi kami.</p>
+        <p>Kehadiran Bapak/Ibu/Saudara/i sangat kami harapkan sebagai bentuk doa dan dukungan.</p>
         <p>Wassalamu’alaikum Warahmatullahi Wabarakatuh</p>
-        <p><strong>Panitia Milad Ke-7</strong></p>
+        <p>Hormat kami, <br><strong>Panitia Milad Ke-7</strong></p>
       </div>
     </div>
   </div>
